@@ -2,7 +2,7 @@
 ==============
 [![Build Status](https://travis-ci.org/QianmiOpen/interface-test.svg?branch=master)](#)
 
-火花链基本Docker镜像主要fork了[dockerfile用户]（https://github.com/dockerfile)的dockerfile文件，在其基础编写了基于区块链的接入平台的docker镜像。为了方便用户开发和生产部署，通过本项目中的镜像既把区块链上链所需要的接入节点、mysql,redis,链端等合并在一起形成单一镜像，方便开发调试，也可以按需要把各个组件分散开来，形成微服务或服务网格中的镜像，进行大规模分布式的部署，获得世间双全法，实现不负如来不负卿。
+火花链基本Docker镜像主要fork了 [dockerfile用户]（https://github.com/dockerfile) 的dockerfile文件，在其基础编写了基于区块链的接入平台的docker镜像。为了方便用户开发和生产部署，通过本项目中的镜像既把区块链上链所需要的接入节点、mysql,redis,链端等合并在一起形成单一镜像，方便开发调试，也可以按需要把各个组件分散开来，形成微服务或服务网格中的镜像，进行大规模分布式的部署，获得世间双全法，实现不负如来不负卿。
 
 ## 使用介绍
 
