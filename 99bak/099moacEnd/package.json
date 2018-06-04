@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "start": "node bin/www.js"
+  },
+  "dependencies": {
+    "node-gyp": "^3.6.2",
+    "async": "",
+    "body-parser": "",
+    "chain3": "^0.1.6",
+    "config": "",
+    "cookie-parser": "",
+    "eth-lib": "",
+    "ethereumjs-tx": "",
+    "express": "",
+    "keccak": "",
+    "keythereum": "",
+    "multer": "",
+    "node-uuid": "",
+    "number-to-bn": "",
+    "secp256k1": "",
+    "solc": "",
+    "underscore": "",
+    "web3": "^1.0.0-beta.34"
+  }
+}
