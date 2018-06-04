@@ -1,8 +1,12 @@
-火花链基本Docker镜像
+火花Docker镜像
 ==============
 [![Build Status](https://travis-ci.org/QianmiOpen/interface-test.svg?branch=master)](#)
 
-火花链基本Docker镜像主要fork了 [dockerfile用户](https://github.com/dockerfile)的dockerfile文件，在其基础编写了基于区块链的接入平台的docker镜像。为了方便用户开发和生产部署，通过本项目中的镜像既把区块链上链所需要的接入节点、mysql,redis,链端等合并在一起形成单一镜像，方便开发调试，也可以按需要把各个组件分散开来，形成微服务或服务网格中的镜像，进行大规模分布式的部署，获得世间双全法，实现不负如来不负卿。
+火花Docker镜像fork了 [dockerfile用户](https://github.com/dockerfile)的项目，在其基础编写了基于区块链的接入平台的docker镜像。<br/>
+不同的业务不同的开发者对性能、并发、高可用性、易用等要求不尽相同，故其接入链端的部署也完全不同。对于初学区块链的开发者，需要一个简单易用的接入链的环境，方便业务开发，对于大型的业务系统，上链就需要考虑到并发，高可用性等，可以需要采用微服务、服务网格来部署。<br/>
+安得世间双全法，不负如来不负卿。有没有一套工具在开发时或简单应用时能实现快速且易用地接入公链，在业务量大增时，能快速地改造成微服务、服务网格这种分布式部署呢？<br/>
+火花Docker镜像就是用来实现这个目标的一组Docker镜像，通过这些镜像，你可以自由地组合，形成复杂强大的接入链的部署，也可以简单使用一行命令就可以部署整个接入链的程序（支持的各大公链）
+
 
 ## 使用简介
 
@@ -42,5 +46,5 @@ docker run -d   --name spc-chain-base --env TESTNET="--testnet"  \
 ## 技术支持
  
   欢迎大家去<a href="http://sparkda.com" target="_blank">斯巴达论坛</a> 进行区块链的技术交流和沟通<br/>
-  
+
 
