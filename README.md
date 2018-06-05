@@ -17,7 +17,7 @@ docker run -d   --name spc-chain-base --env TESTNET="--testnet"  \
 -p 6379:6379 sparkchain/spc-chain-base:1.0
 
 ```
- 自己代码调用docker中的接口，其文档见[火花链接入文档](https://github.com/dockerfile)，示例见 [火花链留言板](https://github.com/dockerfile)示例。
+ 自己代码调用docker中的接口，其文档见[火花链接入文档]()，示例见 [火花链留言板]()示例。
 
 ## docker镜像列表
 
