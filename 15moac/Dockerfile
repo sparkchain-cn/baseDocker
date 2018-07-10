@@ -1,18 +1,18 @@
 
 FROM sparkchain/ubuntu:16.04 
 
-COPY pangu0.8.4.ubuntu.tar.gz  /
+COPY pizzaAlpha.vnode.ubuntu.tar.gz  /
 
 RUN \  
   mkdir -p /moac/ &&\
-  tar xvzf /pangu0.8.4.ubuntu.tar.gz  -C /moac/   && \
-  rm -f  /pangu0.8.4.ubuntu.tar.gz  && \
-  ls /moac/pangu0.8.4/vnode/ &&\
-  cd  /moac/pangu0.8.4/vnode/ && \
-  printf '\n# export PATH="/moac/pangu0.8.4/vnode/:$PATH"' >> /root/.bashrc
+  tar xvzf /pizzaAlpha.vnode.ubuntu.tar.gz  -C /moac/   && \
+  rm -f  /pizzaAlpha.vnode.ubuntu.tar.gz  && \
+  ls /moac/vnode/ &&\
+  cd  /moac/vnode/ && \
+  printf '\n# export PATH="/moac/vnode/:$PATH"' >> /root/.bashrc
 
 # Define working directory.
- WORKDIR /moac/pangu0.8.4/vnode/
+ WORKDIR /moac/vnode/
  VOLUME [ "/root" ]
  EXPOSE  8545
 
