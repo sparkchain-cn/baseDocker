@@ -10,8 +10,8 @@ redis-server  "/etc/redis/redis.conf"  &
 
 
 #--testnet
-cd /moac/pangu-release0.8.2/
-/moac/pangu-release0.8.2/moac  ${TESTNET} --rpc  --rpcaddr="0.0.0.0"  --rpcapi="chain3,mc,net,personal,admin,debug,miner,txpool,db" --rpccorsdomain="*"
+cd /moac/pangu0.8.4/vnode/
+/moac/pangu0.8.4/vnode/moac  ${TESTNET} --rpc  --rpcaddr="0.0.0.0"  --rpcapi="chain3,mc,net,personal,admin,debug,miner,txpool,db" --rpccorsdomain="*"
 
 #/moac/pangu-release0.8.2/moac "--testnet", "--rpc", "--rpcaddr=0.0.0.0", "--rpcapi=chain3,mc,net,personal,admin,debug,miner,txpool,db", "--rpccorsdomain=*" 
 

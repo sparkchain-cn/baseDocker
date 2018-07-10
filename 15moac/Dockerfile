@@ -1,18 +1,18 @@
 
 FROM sparkchain/ubuntu:16.04 
 
-COPY pangu-release0.8.2.tar.gz  /
+COPY pangu0.8.4.ubuntu.tar.gz  /
 
 RUN \  
   mkdir -p /moac/ &&\
-  tar xvzf /pangu-release0.8.2.tar.gz  -C /moac/   && \
-  rm -f  /pangu-release0.8.2.tar.gz  && \
-  ls /moac/pangu-release0.8.2/ &&\
-  cd  /moac/pangu-release0.8.2/ && \
-  printf '\n# moac\nexport PATH="/moac/pangu-release0.8.2/:$PATH"' >> /root/.bashrc
+  tar xvzf /pangu0.8.4.ubuntu.tar.gz  -C /moac/   && \
+  rm -f  /pangu0.8.4.ubuntu.tar.gz  && \
+  ls /moac/pangu0.8.4/vnode/ &&\
+  cd  /moac/pangu0.8.4/vnode/ && \
+  printf '\n# export PATH="/moac/pangu0.8.4/vnode/:$PATH"' >> /root/.bashrc
 
 # Define working directory.
- WORKDIR /moac/pangu-release0.8.2/
+ WORKDIR /moac/pangu0.8.4/vnode/
  VOLUME [ "/root" ]
  EXPOSE  8545
 
