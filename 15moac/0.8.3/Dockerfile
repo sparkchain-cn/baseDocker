@@ -1,19 +1,18 @@
 
 FROM sparkchain/ubuntu:16.04 
 
-RUN wget https://github.com/MOACChain/moac-core/releases/download/v1.0.2/nuwa-vnode1.0.2.ubuntu.tar.gz
+COPY pizzaAlpha.vnode.ubuntu.tar.gz  /
 
 RUN \  
-  mkdir -p /moac/ && \
-  tar xvzf nuwa-vnode1.0.2.ubuntu.tar.gz  -C /moac/   && \
-  mv /moac/nuwa1.0.2/moac  /moac/moac && \
-  rm -f  nuwa-vnode1.0.2.ubuntu.tar.gz  && \
-  ls /moac/  && \
-  cd  /moac/ && \
-  printf '\n# export PATH="/moac/:$PATH"' >> /root/.bashrc
+  mkdir -p /moac/ &&\
+  tar xvzf /pizzaAlpha.vnode.ubuntu.tar.gz  -C /moac/   && \
+  rm -f  /pizzaAlpha.vnode.ubuntu.tar.gz  && \
+  ls /moac/vnode/ &&\
+  cd  /moac/vnode/ && \
+  printf '\n# export PATH="/moac/vnode/:$PATH"' >> /root/.bashrc
 
 # Define working directory.
- WORKDIR /moac/
+ WORKDIR /moac/vnode/
  VOLUME [ "/root" ]
  EXPOSE  8545
 
